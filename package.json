@@ -13,7 +13,9 @@
     "dependencies": {
         "@vitejs/plugin-vue": "^5.0.4",
         "admin-lte": "^3.2.0",
+        "vee-validate": "^4.12.8",
         "vue": "^3.4.27",
-        "vue-router": "^4.3.2"
+        "vue-router": "^4.3.2",
+        "yup": "^1.4.0"
     }
 }
