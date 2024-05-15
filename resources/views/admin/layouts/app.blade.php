@@ -172,34 +172,34 @@
 				data-accordion="false">
 
 				<li class="nav-item menu-open">
-					<a href="admin/dashboard" class="nav-link active">
+					<router-link to ="/admin/dashboard" active-class="active"  class="nav-link">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							Dashboard
 					
 						</p>
-					</a>
+					</router-link>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="admin/appointment" class="nav-link active">
+					<router-link to="/admin/appointments" active-class="active"  class="nav-link ">
 					<i class="fa-regular fa-calendar-check"></i>
 						<p>
 							Appoinments
 					
 						</p>
-					</a>
+					</router-link>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="#" class="nav-link active">
-					<i class="fa-regular fa-users"></i>
+				<router-link to="/admin/users" active-class="active"  class="nav-link ">
+				<i class="fa fa-user" aria-hidden="true"></i>
 						<p>
 							Users
 					
 						</p>
-					</a>
+					</router-link>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="#" class="nav-link active">
+					<a href="#" class="nav-link ">
 					<i class="fa-regular fa-users"></i>
 						<p>
 							Settings
@@ -208,7 +208,7 @@
 					</a>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="#" class="nav-link active">
+					<a href="#" class="nav-link">
 					<i class="fa-solid fa-right-from-bracket"></i>
 						<p>
 							Sign out
