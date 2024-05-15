@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AdminLTE 3 | Starter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -172,34 +174,34 @@
 				data-accordion="false">
 
 				<li class="nav-item menu-open">
-					<a href="admin/dashboard" class="nav-link active">
+					<router-link to ="/admin/dashboard" active-class="active"  class="nav-link">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							Dashboard
 					
 						</p>
-					</a>
+					</router-link>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="admin/appointment" class="nav-link active">
+					<router-link to="/admin/appointments" active-class="active"  class="nav-link ">
 					<i class="fa-regular fa-calendar-check"></i>
 						<p>
 							Appoinments
 					
 						</p>
-					</a>
+					</router-link>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="#" class="nav-link active">
-					<i class="fa-regular fa-users"></i>
+				<router-link to="/admin/users" active-class="active"  class="nav-link ">
+				<i class="fa fa-user" aria-hidden="true"></i>
 						<p>
 							Users
 					
 						</p>
-					</a>
+					</router-link>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="#" class="nav-link active">
+					<a href="#" class="nav-link ">
 					<i class="fa-regular fa-users"></i>
 						<p>
 							Settings
@@ -208,7 +210,7 @@
 					</a>
 				</li>			
 				<li class="nav-item menu-open">
-					<a href="#" class="nav-link active">
+					<a href="#" class="nav-link">
 					<i class="fa-solid fa-right-from-bracket"></i>
 						<p>
 							Sign out
@@ -246,7 +248,8 @@ reserved.
 		
 	</div>
 
-
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 </body>
