@@ -1,6 +1,10 @@
 
 <script setup>
 import axios from 'axios';
+import { onMounted, ref } from 'vue';
+
+
+const users = ref([]);
 
 
 // const users = [
@@ -20,9 +24,14 @@ import axios from 'axios';
 const getUsers = () => {
   axios.get('/api/users')
 .then((response) => {
-  users = response.data;
+  users.value = response.data;
 })
 }
+
+
+onMounted(()=>{
+  getUsers();
+})
 </script>
 
 <template>
