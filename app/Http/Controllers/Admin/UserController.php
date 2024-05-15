@@ -13,4 +13,17 @@ class UserController extends Controller
         
         return $users;
     }
+
+
+    public function Store(Request $request) : User
+    {
+       return User::create([
+        'name' => $request -> name,
+        'email' => $request -> email,
+        'password' => bcrypt($request -> password)
+
+        ]);
+
+        
+    }
 }

@@ -14,5 +14,6 @@ Route::get('/', function () {
 // } );
 
 Route::get('/api/users', [UserController::class, 'Index']);
+Route::post('/api/users', [UserController::class, 'Store']);
 
 Route::get('{view}', ApplicationController::class)->where('view', '(.*)');
